@@ -25,6 +25,8 @@ use std::boxed::Box;
 pub enum Event {
     /// Represents the slack [`hello`](https://api.slack.com/events/hello) event.
     Hello,
+    /// Represents the slack [`goodbye`](https://api.slack.com/events/goodbye) event.
+    Goodbye,
     /// Represents the slack [`message`](https://api.slack.com/events/message)
     /// event.
     Message(Box<Message>),
